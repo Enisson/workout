@@ -23,6 +23,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1146px;
@@ -82,4 +83,19 @@ nav .nav-list #nav-login {
 nav .nav-list #nav-sign {
     border: 1px solid #f2f2f2;
     padding: 0 4px;
+}
+
+@media (max-width: 761px) {
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    div.logo {
+        margin-bottom: 2rem;
+    }
+    nav .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
