@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+/**************************
+/* ESTILOS GERAIS
+/*************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1F1C26;
+}
+
+
+/**************************
+/* HEADER
+/*************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 2rem 0; 
+}
+
+div.logo {
+    height: 122px;
+}
+
+.nav-list, .nav-list__login {
+    display: flex;
+}
+
+nav .nav-list .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-weight: 300;
+    position: relative;
+}
+
+.nav-list li {
+    margin-right: 20px;
+
+} 
+
+.nav-list li:nth-child(4) {
+    margin-right: 16px;
+    
+}
+
+li:nth-child( 5) {
+    margin-right: 0;
+}
+
+nav .nav-list .nav-link:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 100%;
+    background: #59253E;
+}
+
+nav .nav-list #nav-login:hover::before, #nav-sign:hover::before {
+    background: none;
+}
+
+
+nav .nav-list #nav-login {
+    background: #F24B88;
+    padding: 1px 4px;
+}
+
+nav .nav-list #nav-sign {
+    border: 1px solid #f2f2f2;
+    padding: 0 4px;
+}
