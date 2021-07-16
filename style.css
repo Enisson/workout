@@ -29,6 +29,7 @@ header {
     max-width: 1146px;
     margin: 0 auto;
     padding: 2rem 0; 
+    margin-bottom: 4.3rem;
 }
 
 div.logo {
@@ -76,13 +77,23 @@ nav .nav-list #nav-login:hover::before, #nav-sign:hover::before {
 
 
 nav .nav-list #nav-login {
-    background: #F24B88;
+    background: #59253E;
     padding: 1px 4px;
+}
+
+nav .nav-list #nav-login:hover {
+    background: #F24B88;
+    
 }
 
 nav .nav-list #nav-sign {
     border: 1px solid #f2f2f2;
     padding: 0 4px;
+}
+
+nav .nav-list #nav-sign:hover {
+    background: #f2f2f23d;
+    border: 1px solid #f2f2f23d;
 }
 
 @media (max-width: 761px) {
@@ -98,4 +109,153 @@ nav .nav-list #nav-sign {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+
+
+/**************************
+/* MAIN
+/*************************/
+
+main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1146px;
+}
+
+.sec-container {
+    display: flex;
+    position: relative;
+    width: 1146px;
+}
+
+.content h1 {
+    color: #f2f2f2;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: 2.8rem;
+    margin-top: 0.4rem;
+}
+
+.content .workout-title {
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2.3px;
+    margin-bottom: 65px;
+}
+
+.content p {
+    width: 392px;
+    height: 125px;
+    color: #f2f2f2;
+    opacity: 39%;
+    font-weight: 300;
+    margin-bottom: 6.5rem;
+}
+
+.content button {
+    border: none;
+    width: 190px;
+    height: 70px;
+    background: #F24B88;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background: rgb(255, 143, 184)
+}
+
+.img-content {
+    width: 19.9rem;
+    margin-left: 3rem;
+}
+
+.img-content img {
+    border-radius: 20px;
+    width: 100%;
+    
+}
+
+.span-content {   /**** get inspired config ****/
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 335px;
+    height: 210px;
+    background: #332F3C;
+    color: #f2f2f2;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.span-content h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.span-content p {
+    opacity: 36%;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.button-link {
+    display: flex;
+    align-items: center;
+    
+}
+
+.button-link a {
+    height: 39.9px;
+}
+
+.button-link a img:hover {
+    transform: scale(0.9);
+}
+
+.button-link span {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.span-content-challenge {   /**** challenge yourself config ****/
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    width: 335px;width: 335px;
+    height: 210px;
+    background: #332F3C;
+    color: #f2f2f2;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.span-content-challenge h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.span-content-challenge p {
+    opacity: 36%;
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
 }
