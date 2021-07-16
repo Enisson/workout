@@ -96,6 +96,14 @@ nav .nav-list #nav-sign:hover {
     border: 1px solid #f2f2f23d;
 }
 
+@media (max-width: 1100px) {
+    header {
+        margin: 0 auto;
+        
+    }
+    
+}
+
 @media (max-width: 761px) {
     header {
         justify-content: center;
@@ -118,14 +126,22 @@ nav .nav-list #nav-sign:hover {
 
 main {
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    max-width: 1146px;
+    width: 1146px;
 }
 
 .sec-container {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
     width: 1146px;
+    position: relative;
+    margin-top: 8rem;
+    
+}
+
+.sec-container:first-child {
+    margin-top: 0;
 }
 
 .content h1 {
@@ -154,7 +170,7 @@ main {
     margin-bottom: 6.5rem;
 }
 
-.content button {
+.content button {  
     border: none;
     width: 190px;
     height: 70px;
@@ -238,7 +254,7 @@ main {
     position: absolute;
     bottom: 8px;
     right: 0;
-    width: 335px;width: 335px;
+    width: 335px;
     height: 210px;
     background: #332F3C;
     color: #f2f2f2;
@@ -258,4 +274,98 @@ main {
     font-size: 0.8rem;
     font-weight: 200;
     margin-bottom: 1rem;
+}
+
+
+/**************************
+/* LATEST TRAINING
+/*************************/
+
+
+
+div.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+h2.h2-title {
+    color: #f2f2f2;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2.h2-title::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 30%;
+    background: #59253E;
+
+}
+
+span.span-see-more {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+div.video-content {
+    display: flex;
+    
+}
+
+div.video-container {
+    margin-right: 1.5rem;
+}
+
+div.video-container:last-child {
+    margin-right: 0;
+}
+
+div.video-container a img {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
+
+div.video-container a img:hover {
+
+    transform: scale(1.1);
+}
+
+h3.video-title {
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+
+div.video-container p {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    height: 35px;
+    width: 100%;
+    color: #f2f2f2;
+    opacity: 39%;
+}
+
+div.video-container .video-button {  
+    width: 98px;
+    height: 36px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: #F24B88;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+div.video-content .video-button:hover {
+    background: rgb(255, 143, 184)
 }
