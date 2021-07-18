@@ -137,11 +137,12 @@ main {
     width: 1146px;
     position: relative;
     margin-top: 8rem;
-    
+    justify-content: space-between;
 }
 
 .sec-container:first-child {
     margin-top: 0;
+    justify-content: start;
 }
 
 .content h1 {
@@ -316,22 +317,16 @@ span.span-see-more {
     cursor: pointer;
 }
 
-div.video-content {
+.video-container {
     display: flex;
+    flex-direction: column;
+    width: 368px;
     
-}
-
-div.video-container {
-    margin-right: 1.5rem;
-    position: relative;
-}
-
-div.video-container:last-child {
-    margin-right: 0;
 }
 
 div.video-container a img{
     transition: 0.3s all ease-in-out;
+    
 }
 
 
@@ -376,21 +371,9 @@ div.video-content .video-button:hover {
 /* OUR TEAM
 /*************************/
 
-div.profile-content {
-    display: flex;
-    
-}
-
 div.profile-container {
     width: 261px;
-    margin-right: 2.4rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-
-div.profile-container:last-child {
-    margin-right: 0;
 }
 
 div.profile-container div {
@@ -444,4 +427,75 @@ div.profile-container p {
 .profile-button:hover {
     background: #EC3779;
     
+}
+
+/**************************
+/* DISCOVERY YOUR POTENCIAL
+/*************************/
+
+.content-container {
+    background: #332F3C;
+    color: #f2f2f2;
+    height: 382px;
+    width: 100%;
+    text-align: center;
+}
+
+.content-container h2 {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    margin-top: 4rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.content-container p {
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+
+.plans-button {
+    width: 190px;
+    height: 70px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background: #F24B88;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: .2s all ease-in-out;
+}
+
+.plans-button:hover {
+    background: #EC3779;
+    transform: scale(1.1);
+}
+
+.learn-more-button {
+    width: 190px;
+    height: 70px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background: #1F1C26;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: .2s all ease-in-out;
+}
+
+.learn-more-button:hover {
+    background: #222027;
+    transform: scale(1.1);
 }
