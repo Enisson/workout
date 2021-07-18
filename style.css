@@ -58,7 +58,7 @@ nav .nav-list .nav-link {
     
 }
 
-li:nth-child( 5) {
+li:nth-child(n+ 5) {
     margin-right: 0;
 }
 
