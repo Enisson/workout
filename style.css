@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /**************************
 /* ESTILOS GERAIS
@@ -184,7 +184,8 @@ main {
 }
 
 .content button:hover {
-    background: rgb(255, 143, 184)
+    background: #EC3779;
+    
 }
 
 .img-content {
@@ -235,7 +236,7 @@ main {
 }
 
 .button-link a img:hover {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .button-link span {
@@ -322,19 +323,19 @@ div.video-content {
 
 div.video-container {
     margin-right: 1.5rem;
+    position: relative;
 }
 
 div.video-container:last-child {
     margin-right: 0;
 }
 
-div.video-container a img {
-    width: 100%;
-    transition: 0.2s all ease-in-out;
+div.video-container a img{
+    transition: 0.3s all ease-in-out;
 }
 
-div.video-container a img:hover {
 
+div.video-container a img:hover {
     transform: scale(1.1);
 }
 
@@ -359,6 +360,7 @@ div.video-container .video-button {
     font-size: 0.8rem;
     border-radius: 5px;
     border: none;
+    letter-spacing: 1.3px;
     background: #F24B88;
     color: #f2f2f2;
     text-transform: uppercase;
@@ -367,5 +369,79 @@ div.video-container .video-button {
 }
 
 div.video-content .video-button:hover {
-    background: rgb(255, 143, 184)
+    background: #EC3779;
+}
+
+/**************************
+/* OUR TEAM
+/*************************/
+
+div.profile-content {
+    display: flex;
+    
+}
+
+div.profile-container {
+    width: 261px;
+    margin-right: 2.4rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+div.profile-container:last-child {
+    margin-right: 0;
+}
+
+div.profile-container div {
+    background: #f2f2f2;
+    position: relative;
+    
+}
+
+h3.profile-name {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 1rem;
+    font-style: italic;
+    position: absolute;
+    font-weight: 500;
+    top: 26px;
+}
+
+div.profile-container p {
+    margin: 2rem;
+    text-align: center;
+    opacity: 60%;
+    font-size: 0.8rem;
+}
+
+.profile-button {
+    width: 98px;
+    height: 36px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1.3px;
+    background: #F24B88;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.profile-button:hover {
+    background: #EC3779;
+    
 }
