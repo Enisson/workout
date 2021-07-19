@@ -400,6 +400,7 @@ div.video-container .video-button:hover {
 @media (max-width: 761px) {
     .sec-container {
         justify-content: center;
+        
     }
     .span-see-more {
         display: none;
@@ -409,6 +410,9 @@ div.video-container .video-button:hover {
     }
     .video-container:last-child {
         margin-bottom: 0;
+    }
+    div.video-container a img:hover {
+        transform: none;
     }
 }
 
