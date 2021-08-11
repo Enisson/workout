@@ -34,6 +34,16 @@ header {
 
 div.logo {
     height: 122px;
+    z-index: 10;
+}
+
+#menu-open { /* menu hamburguer settings*/
+    display: none;
+    position: fixed;
+    top: 27px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .nav-list, .nav-list__login {
@@ -96,6 +106,7 @@ nav .nav-list #nav-sign:hover {
     border: 1px solid #f2f2f23d;
 }
 
+
 @media (max-width: 1100px) {
     header {
         margin: 0 auto;
@@ -117,6 +128,51 @@ nav .nav-list #nav-sign:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+
+@media (max-width: 500px) { 
+    #menu-open {
+        display: block;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        background: #59253E;
+        height: 100vh;
+        z-index: 888;
+        transition: right .3s ease;
+    }
+    .nav .nav-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list li {
+        margin-top: 30px;
+    }
+
+    .nav-list li:first-child {
+        margin-top: 50px;
+    }
+
+    .nav-list li {
+        margin-right: 0;
+    }
+
+    .nav-list li:nth-child(4) {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    nav .nav-list #nav-login {
+        background: #F24B88;
+    }
+    
+
 }
 
 

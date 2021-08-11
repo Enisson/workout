@@ -14,12 +14,15 @@
         <div class="logo">
             <a href="index.html"><img src="imagens/Logo.png" alt="Workout - believe in yourself"></a>
         </div>
+        <div id="menu-open" onclick="menuOp()">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAUklEQVRIS2NkoDFgpLH5DKMWEAxh+gfRp0+f/hN0Fh4FfHx8KI7G8AHNLaDE9dj00j8OaO4DmscBzS2geRANfQtoHgc0t2Dox8GoD9BDgOalKQAw1BgZsoEhWQAAAABJRU5ErkJggg=="/>
+        </div>
         <nav class="nav">
             <ul class="nav-list">
-                <li type="none"><a href="#" class="nav-link">exercises</a></li>
-                <li type="none"><a href="#" class="nav-link">community</a></li>
-                <li type="none"><a href="#" class="nav-link">pricing</a></li>
-                <li type="none"><a href="#" class="nav-link">about us</a></li>
+                <li type="none"><a href="#h2-title" class="nav-link">exercises</a></li>
+                <li type="none"><a href="#our-team" class="nav-link">Our team</a></li>
+                <li type="none"><a href="#pricing" class="nav-link">pricing</a></li>
+                <li type="none"><a href="#about-us" class="nav-link">about us</a></li>
                 <li type="none" id="nav-li"><a href="#" class="nav-link" id="nav-login">login</a></li>
                 <li type="none" id="nav-li"><a href="#" class="nav-link" id="nav-sign">sign in</a></li>
             </ul>
@@ -61,7 +64,7 @@
 
         <section class="sec-container">
             <div class="title">
-                <h2 class="h2-title">latest training</h2>
+                <h2 class="h2-title" id="h2-title">latest training</h2>
                 <span class="span-see-more">see more here</span>
             </div>
             
@@ -94,7 +97,7 @@
 
         <section class="sec-container">
             <div class="title">
-                <h2 class="h2-title">our team</h2>
+                <h2 class="h2-title" id="our-team">our team</h2>
             </div>
             
                 <div class="profile-container">
@@ -143,7 +146,7 @@
 
         <section class="sec-container">
             <div class="content-container">
-                <h2>discover your potenial</h2>
+                <h2 id="pricing">discover your potenial</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum.  text of the printing and typesetting</p>
                 <button class="plans-button">view plans</button>
                 <button class="learn-more-button">learn more</button>
@@ -152,7 +155,7 @@
 
         <hr>
         
-        <section class="sec-container__footer">
+        <section id="about-us" class="sec-container__footer">
 
             
             <div class="logo-social">
@@ -201,5 +204,7 @@
             
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
