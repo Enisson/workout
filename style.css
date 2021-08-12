@@ -4,6 +4,10 @@
 /* ESTILOS GERAIS
 /*************************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -34,7 +38,17 @@ header {
 
 div.logo {
     height: 122px;
-    z-index: 10;
+}
+
+.logo-responsive img{
+    width: 150px;
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 999;
+    
 }
 
 #menu-open { /* menu hamburguer settings*/
@@ -130,7 +144,7 @@ nav .nav-list #nav-sign:hover {
     }
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {  /*menu hamburguer settings */
     #menu-open {
         display: block;
     }
@@ -138,8 +152,8 @@ nav .nav-list #nav-sign:hover {
     .nav {
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -500px;
+        width: 100%;
         background: #59253E;
         height: 100vh;
         z-index: 888;
@@ -156,7 +170,7 @@ nav .nav-list #nav-sign:hover {
     }
 
     .nav-list li:first-child {
-        margin-top: 50px;
+        margin-top: 135px;
     }
 
     .nav-list li {

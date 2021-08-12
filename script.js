@@ -1,18 +1,26 @@
+var menu = document.querySelector(".nav");
+var logo = document.querySelector(".logo-responsive img");
+var menuOpen = document.querySelector("#menu-open");
+var htmlscroll = document.querySelector("html");
 function menuOp() {
-    let menu = document.querySelector(".nav");
-    let logo = document.querySelector(".logo img");
-
-    if (menu.style.right == '-200px') {
+    if (menu.style.right == '-500px') {
         menu.style.right = '0'; 
-        logo.style.width = '150px';
-        logo.style.position = 'fixed';
-        logo.style.top = '25px';
-        logo.style.left = '15px';
-        logo.style.background = '#1F1C26';
+        logo.style.display = 'block';  
+        htmlscroll.style.scrollBehavior = 'auto';   
     } else {
-        menu.style.right = '-200px';
-        logo.style.position = 'relative';
-        logo.style.width = '237px';
+        menu.style.right = '-500px';
+        logo.style.display = 'none';
+    }
+}
+
+function menuNav() {             /* menu nav transition*/
+
+    if (menuOpen.style.display == 'block' && menu.style.right == '-500px'){
+            menu.style.right = '0'; 
+            logo.style.display = 'block';
+        } else {
+            menu.style.right = '-500px';
+            logo.style.display = 'none';
     }
 }
 
